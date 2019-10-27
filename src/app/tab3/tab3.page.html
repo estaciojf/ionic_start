@@ -1,9 +1,99 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Pagode 90 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<!-- Star Wars List -->
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Top Hits
+    </ion-list-header>
+    <ion-reorder-group id="reorder" disabled="false" (ionItemReorder)="doReorder($event)">
+      <ion-reorder>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/a/6/4/2/16481.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>SPC</h2>
+            <h3>Mineirinho</h3>
+            <p>Levo a minha vida bem do meu jeitinho...</p>
+          </ion-label>
+        </ion-item>
+      </ion-reorder>
+      <ion-reorder>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://i.ytimg.com/vi/vFiiw6iDhFo/hqdefault.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Art Popular</h2>
+            <h3>Pimpolho</h3>
+            <p>Pimpolho é um cara bem legal, pena que não pode ver mulher.</p>
+          </ion-label>
+        </ion-item>
+      </ion-reorder>
+      <ion-reorder>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img
+              src="https://www.vagalume.com.br/molejo/images/molejo.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Molejo</h2>
+            <h3>Cilada</h3>
+            <p>Não era amor era cilada!</p>
+          </ion-label>
+        </ion-item>
+      </ion-reorder>
+      <ion-reorder>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://aconteceagora.com.br/wp-content/uploads/2019/06/cd_cover.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Raça Negra</h2>
+            <h3>Cheia de Manias</h3>
+            <p>Didididiê iê iê</p>
+          </ion-label>
+        </ion-item>
+      </ion-reorder>
+      <ion-reorder>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/97/Mais_uma_Vez.jpg/220px-Mais_uma_Vez.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Exaltasamba</h2>
+            <h3>Me Apaixonei Pela Pessoa Errada</h3>
+            <p>É mais do que desejo é muito mais do que amor</p>
+          </ion-label>
+        </ion-item>
+      </ion-reorder>
+    </ion-reorder-group>
+  </ion-list>
+
+
+<!-- FAB -->
+  <ion-fab vertical="bottom" horizontal="start">
+    <ion-fab-button>
+      <ion-icon name="arrow-round-forward"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <ion-icon name="beer"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="cafe"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="heart"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

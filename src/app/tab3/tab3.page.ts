@@ -9,4 +9,8 @@ export class Tab3Page {
 
   constructor() {}
 
+  doReorder(event: any){
+    console.log('Um item foi alterado')
+    event.detail.complete()
+  }
 }
